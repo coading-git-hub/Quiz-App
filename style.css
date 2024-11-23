@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, #08203e,#557c93);
+color: #fff;
+display: grid;
+place-items: center;
+
+}
+
+.start-btn,
+ .next-btn{
+   
+    background-color: #00a3ff;
+    font-size: 2rem;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #000;
+    transition: all 0.3s;
+    margin-top: -10px;
+
+}
+.start-btn:hover{
+    transform: scale(1.02)translateY(-2px);
+    box-shadow: 0 0 0 5px #08203e;
+}
+.next-btn:hover{
+    transform: scale(1.02)translateY(-2px);
+    box-shadow: 0 0 0 5px #08203e;
+}
+
+.welcome-screen h1{
+    font-size: 36px;
+    margin: 50px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+.quiz-screen{
+    width: 800px;
+    margin: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    margin-top: 0px;
+}
+.question{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+
+
+}
+.ans-btn{
+    background-color: #08203e;
+    color: #ffff;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid #1052a3;
+    box-shadow: 0  5px #1052a3;
+    text-align: left;
+    padding: 20px 30px;
+    transition: all 0.5s;
+   
+}
+.ans-btn:hover{
+transform: scale(1.01)translatey(-2px);
+}
+.correct-ans{
+    background-color: chartreuse;
+    color: black;
+    border-color: #50d57a;
+    box-shadow: 0  5px #50d57a;
+
+}
+.correct-ans:hover{
+    border-color: #50d57a;
+}
+.wrong-ans{
+        background-color: rgb(199, 26, 26);
+        color: black;
+        border-color:rgb(197, 72, 72);
+        box-shadow: 0  5px rgb(197, 72, 72),
+    }
+    .correct-ans:hover{
+        border-color: #50d57a;
+    }
+.next-btn{
+    display: none;
+}
+.ans-btn:disabled{
+    cursor: no-drop;
+}
+.score{
+    color: #ff9601;
+    font-weight: 600; 
+ } 
+
